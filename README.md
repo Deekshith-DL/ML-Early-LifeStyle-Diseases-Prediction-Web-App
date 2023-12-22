@@ -50,22 +50,7 @@ This repository hosts the code and resources for a machine learning-based diseas
 
 3. Receive real-time predictions and recommendations for various diseases.
 
-## Contributing
-
-If you would like to contribute to the project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and submit a pull request.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Special thanks to [contributors](CONTRIBUTORS.md) who participated in this project.
-
-Feel free to explore, contribute, and use this project to create impactful applications in the field of healthcare. If you have any questions or suggestions, please open an issue or contact the project maintainers.
-
-Happy coding! 🚀
