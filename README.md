@@ -54,3 +54,8 @@ This repository hosts the code and resources for a machine learning-based diseas
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Prediction Web-App
+
+![Main Page of Web App](url)
+
