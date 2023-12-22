@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templates\style.css">
+    <title>ML Disease Prediction</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+/*     background-image:url("https://media.istockphoto.com/id/940993008/vector/abstract-geometric-medical-cross-shape-medicine-and-science-concept-background.jpg?s=612x612&w=0&k=20&c=K6wREAMiRA3V-OGFDFxls9iZZCgL39kwKPxeQEUwT38=");
+     */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+.container {
+
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+          
+}
+    table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 20%;
+   
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+    
+.left-side,
+.right-side {
+            flex: 1; /* Each container takes up equal space */
+            overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+        }
+
+        /* Style for demonstration purposes */
+        .left-side {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .right-side {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+        <!-- Content for the left side goes here -->
+            <h1> Early LifeStyle Diseases Prediction Using Machine Learning</h1>
+            <img src="https://img.freepik.com/free-photo/medical-banner-with-doctor-working-laptop_23-2149611211.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703116800&semt=sph"/>
+        
+        
+    </div>
+
+    <div class="right-side">
+        <table>
+            <tr><td>
+                <img src="https://freepngimg.com/download/health/22905-6-health-file.png" width="70"/></td>
+                <td><h3> Enter Your Details:</h3></td>
+                </tr>
+        
+        <form method="post" action="/predict">
+    <table>
+        <tr>
+            <td>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </td>
+            <td>
+                <label for="age">Age:</label>
+                <input type="number" name="age" required>
+            </td>
+            <td>
+                <label for="bmi">BMI:</label>
+                <input type="number" step="0.01" name="bmi" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="smoking">Smoking Status:</label>
+                <select name="smoking" id="smoking">
+                    <option value="Non-Smoker">Non-Smoker</option>
+                    <option value="Former-Smoker">Former-Smoker</option>
+                    <option value="Smoker">Smoker</option>
+                </select>
+            </td>
+            <td>
+                <label for="blood_pressure">Blood Pressure (Systolic):</label>
+                <input type="number" name="blood_pressure" required>
+            </td>
+            <td>
+                <label for="diet">Diet:</label>
+                <select name="diet" id="diet">
+                    <option value="Balanced">Balanced</option>
+                    <option value="Unhealthy">Unhealthy</option>
+                    <option value="Healthy">Healthy</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="alcohol">Alcohol Consumption:</label>
+                <select name="alcohol" id="alcohol">
+                    <option value="Low">Low</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="High">High</option>
+                </select>
+            </td>
+            <td>
+                <label for="physical">Physical Activity:</label>
+                <select name="physical" id="physical">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </td>
+            <td>
+                <label for="chol">Cholesterol:</label>
+                <select name="chol" id="chol">
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sleep">Sleep Hours:</label>
+                <input type="number" name="sleep" required>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button type="submit"><b>Predict</b></button>   
+            </td>
+        </tr>
+    </table>
+</form>
+        {% if prediction %}
+            <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

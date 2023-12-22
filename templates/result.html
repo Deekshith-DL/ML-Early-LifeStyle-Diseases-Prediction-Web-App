@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1703203200&semt=ais");
+            color: #fff;
+            margin: 0;  
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #B71C1C;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #ecf0f1;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Prediction Result</b></h1>
+    
+    <table>
+        <tr>
+            <th colspan="2">Predicted Disease:</th>
+        </tr>
+        <tr>
+            <td colspan="2"><h2>{{ prediction }}</h2></td>
+        </tr>
+        <tr>
+            <th colspan="2">Precautions/Recommendations:</th>
+        </tr>
+        {% for precaution in precautions %}
+            <tr>
+                <td colspan="2"><li>{{ precaution }}</li></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

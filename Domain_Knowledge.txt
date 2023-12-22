@@ -1,0 +1,33 @@
+**Heart Disease:**
+Risk factors
+1.Age. Growing older increases the risk of damaged and narrowed arteries and a weakened or thickened heart muscle.
+2.Sex. Men are generally at greater risk of heart disease. ...
+3.Family history. ...
+4.Smoking. ...
+5.Unhealthy diet. ...
+6.High blood pressure. ...
+7.High cholesterol. ...
+8.Diabetes.
+
+**Diabetes**
+1.Have prediabetes.
+2.Are overweight.
+3.Are 45 years or older.
+4.Have a parent, brother, or sister with type 2 diabetes.
+5.Are physically active less than 3 times a week.
+6.Have ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed over 9 pounds.
+
+**Hypertension**
+1.older age.
+2.genetics.
+3.being overweight or obese.
+4.not being physically active.
+5.high-salt diet.
+6.drinking too much alcohol.
+
+**Obesity**
+1.Food and Activity. People gain weight when they eat more calories than they burn through activity. ...
+2.Environment. ...
+3.Genetics. ...
+4.Health Conditions and Medications. ...
+5.Stress, Emotional Factors, and Poor Sleep.
