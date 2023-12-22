@@ -57,5 +57,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Prediction Web-App
 
-![Main Page of Web App](url)
+![Main Page of Web App](https://github.com/Deekshith-DL/ML-Early-LifeStyle-Diseases-Prediction-Web-App/blob/main/Screenshot%20(53).png)
 
